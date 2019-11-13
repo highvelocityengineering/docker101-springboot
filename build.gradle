@@ -26,17 +26,17 @@ dependencies{
     testCompile("junit:junit")
 }
 
-// war{
-//     enabled = true
-//     // baseName = "docker101_springboot"
-// }
+war{
+    enabled = true
+    baseName = "docker101_springboot"
+}
 
-// bootJar{
-//     dependsOn jar
-//     classifier = "boot"
-//     baseName = "docker101_springboot"
-//     launchScript()
-// }
+bootJar{
+    dependsOn jar
+    classifier = "boot"
+    baseName = "docker101_springboot"
+    launchScript()
+}
 
 bootWar{
     dependsOn bootJar
